@@ -1,15 +1,15 @@
-# recode_primeira_entrega
- Primeira entrega individual da recode (usando visualg)
+# first_individual_recode_coursework
+ First individual recode coursework
 
-Sistema de cadastro de clientes e destinos pra uma agencia de viagens.
-por conta de algumas limitações do visualg, o programa não funciona 100% da forma em que eu gostaria
-uma das questões é não opção de codigo para modificar um arquivo gerado com o codigo (arquivo)
-fazendo com que o programa gere um arquivo e sempre leia esse arquivo esse mesmo arquivo gerado da primeira vez, não tendo possibilidade de mudar os dados
+Software made in VisualG (with portugol) to study logic programming.
+This software has some limitations, becouse is made with pseudocode.
 
+Software to register customers and travel destinations to a travel company
 
-# Funções
+# Functions
 
-## 1 - Cadastra clientes usando matriz e vetor
-## 2 - Cadastra destinos usando matriz e vetor
-## 3 - Consulta todos destinos salvos na matriz
-## 4 - Consulta todos os clientes salvos na matriz
+## 1 - Register the customer 
+## 2 - Register travel destinations
+## 3 - consult all customers
+## 4 - consult all travel destinations
+## 5 - consult a especifically customer
