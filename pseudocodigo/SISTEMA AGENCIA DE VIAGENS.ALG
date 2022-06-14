@@ -1,9 +1,11 @@
 Algoritmo "sistema agencia de viagens"
+// Disciplina   : [Linguagem e Lógica de Programação] 
+// Professor   : Antonio Carlos Nicolodi 
 // Descrição   : Cadastra clientes e destinos e possui sistema
 //               de consulta dos clientes e destinos
 // Autor(a)    : Giovane Serafim Roxo
 // Data atual  : 12/06/22
-arquivo "C:\Users\Giovane\Desktop\Nova pasta\bancodedados.txt"
+arquivo "bancodedados.txt"
 Var
 // Seção de Declarações das variáveis
 
@@ -16,6 +18,7 @@ Var
  c: inteiro                                  // variavel para estrutura de repetição
  i:inteiro                                   //variavel para estutura de repetição
  opcaoEscolhida: inteiro                     //opção escolhida pelo usuario
+ numeroc:inteiro                             //guarda nro do cliente
 
 Inicio
 
@@ -23,8 +26,9 @@ enquanto verdadeiro faça                     //laço de repetição infinito
     escreval("=== MENU DE OPÇÕES ==========:")
     escreval("1- Cadastrar clientes")
     escreval("2- Cadastrar destinos")
-    escreval("3- Consultar clientes")
-    escreval("4- Consultar destinos")
+    escreval("3- Consultar todos os clientes")
+    escreval("4- Consultar todos os destinos")
+    escreval("5- Consultar cliente especifico")
     escreval("ESC- Sair")
     leia(opcaoEscolhida)                      //Armazena a opção escolhida
 
@@ -84,7 +88,18 @@ enquanto verdadeiro faça                     //laço de repetição infinito
                       escreval()
                       escreval()
           fimpara
-
+          
+          caso 5
+          escreval("Digite o numero do cliente")
+          leia(numeroc)
+          limpatela
+          escreva(clientes[numeroc, 0])
+          escreva(" ")
+          escreval(clientes[numeroc, 1])
+          escreval(clientes[numeroc, 2])
+          escreval(clientes[numeroc, 3])
+          escreval(clientes[numeroc, 4])
+          escreval(clientes[numeroc, 5])
        fimescolha
 fimenquanto
 
