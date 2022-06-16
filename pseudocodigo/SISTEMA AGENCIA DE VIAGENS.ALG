@@ -5,7 +5,7 @@ Algoritmo "sistema agencia de viagens"
 //               de consulta dos clientes e destinos
 // Autor(a)    : Giovane Serafim Roxo
 // Data atual  : 12/06/22
-arquivo "bancodedados.txt"
+arquivo "dados.txt"
 Var
 // Seção de Declarações das variáveis
 
