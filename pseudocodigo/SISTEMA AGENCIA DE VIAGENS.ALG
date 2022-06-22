@@ -5,24 +5,23 @@ Algoritmo "sistema agencia de viagens"
 //               de consulta dos clientes e destinos
 // Autor(a)    : Giovane Serafim Roxo
 // Data atual  : 12/06/22
-arquivo "dados.txt"
+
 Var
 // Seção de Declarações das variáveis
 
- clientes:vetor[1..100, 0..5] de caractere   // matriz de clientes
+ clientes:vetor[1..10, 0..5] de caractere   // matriz de clientes
  x, j: inteiro                               // variaveis da matriz de clientes
- destinos:vetor[1..100, 0..2] de caractere   // matriz de destinos
+ destinos:vetor[1..10, 0..2] de caractere   // matriz de destinos
  z, y: inteiro                               // variaveis da matriz de destinos
  clientex: inteiro                           // Numero de clientes adicionados
  destinox: inteiro                           // numero de destinos adicionados
  c: inteiro                                  // variavel para estrutura de repetição
- i:inteiro                                   //variavel para estutura de repetição
  opcaoEscolhida: inteiro                     //opção escolhida pelo usuario
  numeroc:inteiro                             //guarda nro do cliente
 
 Inicio
 
-enquanto verdadeiro faça                     //laço de repetição infinito
+enquanto verdadeiro faça                     // laço de repetição infinito
     escreval("=== MENU DE OPÇÕES ==========:")
     escreval("1- Cadastrar clientes")
     escreval("2- Cadastrar destinos")
@@ -30,22 +29,30 @@ enquanto verdadeiro faça                     //laço de repetição infinito
     escreval("4- Consultar todos os destinos")
     escreval("5- Consultar cliente especifico")
     escreval("ESC- Sair")
-    leia(opcaoEscolhida)                      //Armazena a opção escolhida
+    leia(opcaoEscolhida)                             // Armazena a opção escolhida
 
     escolha opcaoEscolhida
        caso 1
           limpatela
            escreval("=== CADASTRO DE CLIENTE =======:")
            escreval(" Quantos clientes vai adicionar? ")
-           leia(clientex)                     // armazena numero de clientes que vai adicionar
+           leia(clientex)                            // armazena numero de clientes que vai adicionar
                limpatela
-               escreval("--Digite os dados do cliente: ")
-               escreval("--Nome, Sobrenome, CPF, Endereço, Cidade, Estado")
                    para x de 1 até clientex faça     // repete perguntas pelo numero de quantidade informado anteriormente
-                   escreval("/-/clentes ", x)
+                   escreval("====Digite os dados do cliente====")
+                   escreval("--Nome")
+                   escreval("--Sobrenome")
+                   escreval("--CPF")
+                   escreval("--endereço")
+                   escreval("--cidade")
+                   escreval("--estado")
+                   escreval("*****NESTA ORDEM*****")
+                   escreval(" ")
+                   escreval("/-/clente: ", x)
                        para j de 0 até 5 faça        // 5 tipos de finromação (Nome, sobrenomeme, cpf, endereço, cidade, estado) nessa ordem
                            leia(clientes[x,j])       // salva na matriz
                        fimpara
+                   limpatela
                    fimpara
        caso 2
            limpatela
@@ -66,7 +73,7 @@ enquanto verdadeiro faça                     //laço de repetição infinito
           limpatela
           escreval("Clientes: ")
           para x de 1 até clientex faça
-                      escreva(x)
+                      escreva("id="x)
                       escreva(" - ")
                       escreva(clientes[x,0])
                       escreva(" ")
@@ -90,7 +97,8 @@ enquanto verdadeiro faça                     //laço de repetição infinito
           fimpara
           
           caso 5
-          escreval("Digite o numero do cliente")
+          limpatela
+          escreval("Digite o id do cliente")
           leia(numeroc)
           limpatela
           escreva(clientes[numeroc, 0])
