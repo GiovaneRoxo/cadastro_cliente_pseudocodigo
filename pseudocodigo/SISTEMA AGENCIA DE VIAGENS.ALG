@@ -15,7 +15,6 @@ Var
  z, y: inteiro                               // variaveis da matriz de destinos
  clientex: inteiro                           // Numero de clientes adicionados
  destinox: inteiro                           // numero de destinos adicionados
- c: inteiro                                  // variavel para estrutura de repetição
  opcaoEscolhida: inteiro                     // opção escolhida pelo usuario
  numeroc:inteiro                             // guarda nro do cliente
  msg:vetor[0..5] de caractere                // guarda mensagens cliente
